@@ -18,6 +18,7 @@ function Project({ project, path }) {
     <div className="project">
       <aside>
         <h3>You can deploy...</h3>
+        <p>New Branch is Development branch</p>
         <ul>
           {projects.map((project) => {
             return (
