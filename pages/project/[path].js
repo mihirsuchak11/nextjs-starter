@@ -8,6 +8,7 @@ import {
   projectIcons
 } from '../../components/Icons';
 import { projects } from '../../utils/projectsData';
+import Link from 'next/link'
 
 function Project({ project, path }) {
   const projectData = projects.find(project => project.slug === path);
@@ -21,7 +22,9 @@ function Project({ project, path }) {
           {projects.map((project) => {
             return (
               <li key={project.id}>
-                <a href={`/project/${project.slug}`}>{project.name}</a>
+                <Link href={`/project/${project.slug}`}>
+                  <a>{project.name}</a>
+                </Link>
               </li>
             );
           })}
