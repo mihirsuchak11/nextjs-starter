@@ -1,7 +1,7 @@
 const data = require('./utils/projectsData');
 
 module.exports = {
-  trailingSlash: true,
+  trailingSlash: false,
   exportPathMap: async function () {
     const { projects } = data;
     const paths = {
