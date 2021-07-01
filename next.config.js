@@ -14,9 +14,10 @@ module.exports = {
         query: { path: project.slug },
       };
     });
-    paths = {
-      '/server': { page: '/server' }
-    }
+    paths[`/server`] = {
+      page: '/server',
+      query: { path: '/server' },
+    };
 
     return paths;
   },
